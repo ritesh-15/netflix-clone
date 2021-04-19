@@ -1,0 +1,35 @@
+ .buttons{
+     width: 69%;
+ }
+ .tv-video-div {
+    position: absolute;
+    top: 7%;
+    left: 10.2%;
+}
+.get-started{
+    margin: 0%;
+    padding: 0%;
+    padding-left: 8%;
+    padding-top: 1%;
+    margin-left: 21%;
+    margin-top: 2%;
+}
+.download {
+    margin-left: 5rem;
+}
+
+@media Only screen and (max-width:281px){
+    .buttons{
+        width: 100%;
+        margin-left: 10%;
+    }
+    .logo{
+        display: inline-block;
+        width: 100%;
+        padding-left: 0%; 
+        margin-left: 11%;
+        margin-bottom: 8%;
+    }
+}
+
+

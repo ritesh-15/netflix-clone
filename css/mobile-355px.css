@@ -1,0 +1,68 @@
+#signin{
+    width: 38%;
+    
+}
+#signin a{
+    text-decoration: none;
+    color:white;
+    padding: 0px 0px;
+    font-size: 11px;
+}
+.lang-btn{
+    width: 40%;
+    font-size: 11px;
+}
+.lang-btn i {
+    padding: 10px 0px;
+}
+.logo{
+    display: inline-block;
+    width: 31%;
+    padding-left: 3%;
+}
+
+.logo img{
+    height: 100%;
+    width: 45%;
+    padding-bottom: 4%;
+}
+
+.navbar{
+    margin-left: -4%;
+    padding: 10px 17px;
+    margin-right: 5%;
+}
+.get-started{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    font-family: 'RockRoll One';
+    transition: all 0.6ms ease-in 0.3ms;
+    background-color: rgb(236, 20, 20);
+    margin-left: 25%;
+    height: 40%;
+    margin-top: 5%;
+    
+}
+.get-started h5{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 18px;
+    margin-left: 0%;
+   
+}
+.get-started i {
+    margin: 0px;
+}
+.dropdown label{
+    padding: 0px;
+}
+.lang-btn i{
+    padding-bottom: 5%;
+    padding-top: 15%;
+}
+.tv-video-div {
+    position: absolute;
+    top: 7%;
+    left: 10.2%;
+}

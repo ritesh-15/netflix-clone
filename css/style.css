@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+#displayMsg{
+    margin-left: 22%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 10%;
+    align-content: flex-start;
+    padding: 0;
+
+}
+.navbar::before{
+    content: "";
+    background: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.logo{
+    display: inline-block;
+    width: 31%;
+    padding-left: 3%;
+}
+
+.logo img{
+    height: 100%;
+    width: 40%;
+    padding-bottom: 4%;
+}
+.nav-div::before{
+    content: "";
+    background: url("/images/bg.webp")no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: 0.98;
+}
+.nav-div{
+    position: relative;  
+    box-shadow: inset 10px 0px 500px 50px #000000;
+}
+
+.buttons{
+    padding-right: 5%;
+    display: flex;
+}
+
+#signin a{
+    text-decoration: none;
+    color:white;
+    padding: 8px 17px
+}
+.lang-btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+}
+.lang-btn i {
+    padding-top: 8px;
+}
+
+/* MAIN DIV HEAD STYLING */
+.main-div-head{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 88vh;
+    
+}
+.main-div-head::before{
+    content: "";
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.heading-color{
+    color: white;
+    text-align: center;
+    font-family: 'Orelega One';
+}
+.desc{
+    padding-right: 10%;
+}
+
+.first-heading h1{
+    font-size: 4.5rem;
+}
+.first-heading{
+    margin-top: 10%;
+}
+.email-div{
+    display: flex;
+    padding-left: 26%;
+}
+.email-div input{
+    width: 35rem;
+    height: 4.3rem;
+    padding: 8px 8px;
+    
+}
+.get-started{
+    width: 12rem;
+    text-align: center;
+    display: flex;
+    padding: 14px 20px;
+    font-family: 'RockRoll One';
+    transition: all 0.6ms ease-in 0.3ms;
+    background-color: rgb(236, 20, 20);
+    
+}
+.get-started:hover{
+    width: 16rem;
+    padding-left: 5%;
+    background-color: red;
+}
+#icon{
+    font-size: 30px;
+}
+.get-started h5{
+    text-align: center;
+    padding-top: 0%;
+    font-size: 26px;
+}
+
+/* CONTENT DIV */
+.content-div{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: black;
+    color: white;
+    margin-top: 0px;
+}
+
+.txt{
+    padding: 7% 0%;
+}
+.txt h5 {
+    width: 80%;
+    font-size: 28px;
+}
+.second-img-div{
+    padding-right: 0%;
+}
+.content-heading{
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 55px;
+}
+.first-content{
+    display: flex;
+    justify-content: center;
+    margin:0% 17%;
+}
+.first-content img{
+    width: 28rem;
+    height: 22rem;
+    position: relative;
+    z-index: 2;
+    
+}
+.tv-video-div{
+    position: absolute;
+    top: -1%;
+    left: 57.2%;
+
+}
+.tv-video{
+    width: 20.5rem;
+    height: 23rem;
+}
+#txt-content-2{
+    padding-left: 1%;
+}
+.download{
+    margin-left: 8rem;
+    display: flex;
+}
+#download-txt{
+    margin-left: 10px;
+}
+.tv-video-div2{
+    position: absolute;
+    top: 71%;
+    left: 59%;
+
+}
+.tv-video2{
+    width: 17.8rem;
+    height: 23rem;
+}
+#second-div,#third-div{
+    margin-top: 10%;
+}
+.divider{
+    background: white;
+    height: 20%;
+    width: 100%;
+}
+.accordian-container{
+    width: 50%;
+    height: auto;
+    padding-top: 3%;
+    margin-left: 25%;
+    
+}
+.accordian-info-div{
+    background-color: black;  
+    margin-bottom: -1%;
+    padding-bottom: 5%;
+}
+.info{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+.accordian-info-div h1{
+    text-align: center;
+    padding-top: 10%;
+}
+.accordian-info-div button{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.accordian-txt{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+}
+.footer-content{
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* MEDIA QUERY FOR LAPTOP OF WIDTH 1024PX AND BELOW */
+@media Only screen and (max-width:1025px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 10%;
+        align-content: flex-start;
+        padding: 0;
+    
+    }
+    .navbar::before{
+        content: "";
+        background: black;
+        opacity: 0.7;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    .logo{
+        display: inline-block;
+        width: 31%;
+        padding-left: 3%;
+    }
+    
+    .logo img{
+        height: 100%;
+        width: 40%;
+        padding-bottom: 4%;
+    }
+    .nav-div::before{
+        content: "";
+        background: url("/images/bg.webp")no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        opacity: 0.98;
+       
+    }
+    .nav-div{
+        position: relative;
+       
+    }
+    
+    .buttons{
+        padding-right: 5%;
+        display: flex;
+    }
+    
+    #signin a{
+        text-decoration: none;
+        color:white;
+        padding: 8px 17px
+    }
+    .lang-btn{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: auto;
+    }
+    .lang-btn i {
+        padding-top: 8px;
+    }
+    
+    /* MAIN DIV HEAD STYLING */
+    .main-div-head{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        height: 100%;
+        
+    }
+    .main-div-head::before{
+        content: "";
+        background: black;
+        opacity: 0.5;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .heading-color{
+        color: white;
+        text-align: center;
+        font-family: 'Orelega One';
+    }
+    .desc{
+        padding-right: 10%;
+    }
+    
+    .first-heading h1{
+        font-size: 4.5rem;
+    }
+    .first-heading{
+        margin-top: 10%;
+    }
+    .email-div{
+        display: flex;
+        padding-left: 15%;
+    }
+    .email-div input{
+        width: 35rem;
+        height: 4.3rem;
+        padding: 8px 8px;
+        
+    }
+    .get-started{
+        width: 12rem;
+        text-align: center;
+        display: flex;
+        padding: 14px 20px;
+        font-family: 'RockRoll One';
+        transition: all 0.6ms ease-in 0.3ms;
+        background-color: rgb(236, 20, 20);
+        
+    }
+    .get-started:hover{
+        width: 16rem;
+        padding-left: 5%;
+        background-color: red;
+    }
+    #icon{
+        font-size: 30px;
+    }
+    .get-started h5{
+        text-align: center;
+        padding-top: 0%;
+        font-size: 26px;
+    }
+    
+    /* CONTENT DIV */
+    .content-div{
+        position: relative;
+        height: auto;
+        width: 100%;
+        background: black;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .txt{
+        padding: 7% 0%;
+    }
+    .txt h5 {
+        width: 80%;
+        font-size: 24px;
+    }
+    .second-img-div{
+        padding-right: 0%;
+    }
+    .content-heading{
+        color: white;
+        font-family: 'Orelega One', cursive;
+        font-size: 51px;
+    }
+    .first-content{
+        display: flex;
+        justify-content: center;
+        margin:0% 5%;
+    }
+    .first-content img{
+        width: 28rem;
+        height: 22rem;
+        position: relative;
+        z-index: 2;
+        
+    }
+    .tv-video-div{
+        position: absolute;
+        top: -1%;
+        left: 57.2%;
+    
+    }
+    .tv-video{
+        width: 20.5rem;
+        height: 23rem;
+    }
+    #txt-content-2{
+        padding-left: 1%;
+    }
+    .download{
+        margin-left: 8rem;
+        display: flex;
+    }
+    #download-txt{
+        margin-left: 10px;
+    }
+    .tv-video-div2{
+        position: absolute;
+        top: 69%;
+        left: 59%;
+    
+    }
+    .tv-video2{
+        width: 17.8rem;
+        height: 23rem;
+    }
+    #second-div,#third-div{
+        margin-top: 10%;
+    }
+    .divider{
+        background: white;
+        height: 20%;
+        width: 100%;
+    }
+    .accordian-container{
+        width: 70%;
+        height: auto;
+        padding-top: 3%;
+        margin-left: 15%;
+        
+    }
+    .accordian-info-div{
+        background-color: black;  
+        margin-bottom: -1%;
+        padding-bottom: 5%;
+    }
+    .info{
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+    .accordian-info-div h1{
+        text-align: center;
+        padding-top: 10%;
+    }
+    .accordian-info-div button{
+        font-family: 'Lora', serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .accordian-txt{
+        font-family: 'Lora', serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .footer{
+        background-color: black;
+        color: white;
+        padding-top: 5%;
+    }
+    .footer-content{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS OF WIDTH 768 PX AND BELOW */
+@media Only screen and (max-width:768px){
+    .first-heading h1{
+        font-size: 40px;
+    }
+    .email-div{
+        padding-left: 12%;
+    }
+    .email-div input{
+        width: 25rem;
+        height: 4.3rem;
+        padding: 8px 8px;
+        
+    }
+    .get-started{
+        width: 12rem;
+        text-align: center;
+        display: flex;
+        padding: 14px 20px;
+        font-family: 'RockRoll One';
+        transition: all 0.6ms ease-in 0.3ms;
+        background-color: rgb(236, 20, 20);
+        
+    }
+    .get-started:hover{
+        width: 12rem;
+        padding: 14px 20px;
+        background-color: red;
+    }
+    .get-started h5{
+        text-align: center;
+        padding-top: 0%;
+        font-size: 26px;
+    }
+    .first-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0% 17%;
+    }
+    .first-content img{
+        width: 100%;
+    }
+    .tv-video-div{
+        position: absolute;
+        top: 9%;
+        left: 26.2%;
+    
+    }
+    .tv-video{
+        width: 75%;   
+    }
+    .txt{
+        width: 100%;
+        text-align: center;
+    }
+    .desc{
+        padding-right: 0%;
+    }
+    .txt h5{
+        width: 100%;
+        font-size: 20px;
+    }
+    .content-heading{
+        font-size: 45px;
+    }
+    #txt-content-2{
+        order: 0;
+    }
+    .second-img-div{
+        order: 1;
+    }
+    .tv-video-div2{
+        position: absolute;
+        top: 78%;
+        left: 31%;
+    
+    }
+    .tv-video2{
+        width: 60%;    
+    }
+    .download{
+        margin-left: 10rem;
+    }
+    .accordian-container{
+        width: 100%;
+        padding: 0px 20px;
+        margin-left: 0%;
+    }
+}
+
+@media Only screen and (max-width:550px){
+    .email-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .get-started{
+        margin-top: 2%;
+    }
+}
